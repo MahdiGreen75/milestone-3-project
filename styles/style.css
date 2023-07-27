@@ -43,7 +43,9 @@
 .slide1::before,
 .slide2::before,
 .slide3::before,
-.slide4::before {
+.slide4::before
+
+ {
     content: "";
     position: absolute;
     top: 0;
@@ -54,4 +56,19 @@
     /* Adjust the last value (alpha) to control darkness */
     pointer-events: none;
     /* Allows clicking through the overlay if necessary */
+}
+
+/* meat-the-team-section */
+.meat-the-team-section{
+    background-image: url('../images/banner1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+    height: auto;
+    margin: 0 auto;
+}
+.meat-overlay {
+    pointer-events: none;
+    background-color: rgba(0, 0, 0, 0.438);
 }
