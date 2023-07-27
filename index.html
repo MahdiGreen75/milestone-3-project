@@ -1,13 +1,199 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- swipper.js library -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
 </head>
+
 <body>
-    <header></header>
-    <main></main>
+    <header>
+        <!-- Navbar -->
+        <nav
+            class="md:mb-12 md:mt-5 md:rounded-full relative z-10 flex flex-row justify-center items-center p-5 md:container mx-auto md:bg-red-400">
+            <div class="hidden md:block md:flex-1">
+                <ul class="flex flex-row justify-evenly items-center ">
+                    <li class="list-none"><a class="decoration-0 text-white" href="#">Home</a></li>
+                    <li class="list-none"><a class="decoration-0 text-white" href="#">About Us</a></li>
+                    <li class="list-none"><a class="decoration-0 text-white" href="#">Shop</a></li>
+                    <li class="list-none"><a class="decoration-0 text-white" href="#">All Fruits</a></li>
+                </ul>
+            </div>
+            <div class="flex  justify-start flex-1">
+                <div class="md:mx-auto flex justify-center items-center gap-2">
+                    <img src="./images/logo.png" alt="" class="w-7">
+                    <h1 class="font-bold md:text-white text-xl">Fruit Brast</h1>
+                </div>
+            </div>
+            <div class="hidden md:flex-1 w-1/6 md:inline-block  search-container">
+                <input type="text" class="p-3 w-full rounded-full search-input" placeholder="Search here">
+            </div>
+            <!-- hamburger for mobile devices and small tablet -->
+            <div class="flex-1 md:hidden  flex justify-end ">
+                <div class="relative z-0 hamburger-btn">
+                    <svg class="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none">
+                        <path d="M3.75 6.75H20.25M3.75 12H20.25M3.75 17.25H20.25" stroke="#121212" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <div class="absolute top-[4px] -left-[80px] dropdown-nav 
+                         divide-y text-xs
+                         divide-black text-white rounded-lg p-4 border-solid
+                          border-l-neutral-500  bg-slate-500 z-10">
+
+                        <li class="list-none"><a class="decoration-0 text-white" href="#">Home</a></li>
+                        <li class="list-none"><a class="decoration-0 text-white" href="#">About Us</a></li>
+                        <li class="list-none"><a class="decoration-0 text-white" href="#">Shop</a></li>
+                        <li class="list-none"><a class="decoration-0 text-white" href="#">All Fruits</a></li>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- Carousel -->
+        <!-- Carousel is built using swiper.js library -->
+        <div class="relative z-0 flex flex-col items-center">
+            <!-- Slider main container -->
+            <div class="swiper rounded-lg  w-11/12 md:w-4/5 h-fit">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper ">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="slide1 relative">
+                            <img src="./images/banner1.png">
+                            <div class="w-full h-full">
+                                <div
+                                    class="absolute left-0 top-0 right-0 bottom-0 m-auto
+                                                w-1/2 h-1/2 flex flex-col justify-center items-center tracking-tighter md:tracking-normal text-center gap-0">
+                                    <h1 class="font-semibold text-white text-base leading-3 mb-1
+                                              md:font-extrabold  md:text-5xl md:leading-12">Exotic tastes at your
+                                        doorstep</h1>
+                                    <p class="font-light leading-3 text-white text-xs mb-1
+                                    md:font-bold md:leading-6 md:text-base">We supply highly quality
+                                        organic
+                                        products</p>
+                                    <button class="btn-xs text-white rounded-md bg-red-400 border-transparent
+                                    md:btn-md">Shop
+                                        Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide2 relative">
+                            <img src="./images/banner2.png">
+                            <div class="w-full h-full">
+                                <div
+                                    class="absolute left-0 top-0 right-0 bottom-0 m-auto
+                                            w-1/2 h-1/2 flex flex-col justify-center items-center tracking-tighter md:tracking-normal text-center gap-0">
+                                    <h1 class="font-semibold text-white text-base leading-3 mb-1
+                                          md:font-extrabold  md:text-5xl md:leading-12">Exotic tastes at your
+                                        doorstep</h1>
+                                    <p class="font-light leading-3 text-white text-xs mb-1
+                                md:font-bold md:leading-6 md:text-base">We supply highly quality
+                                        organic
+                                        products</p>
+                                    <button class="btn-xs text-white rounded-md bg-red-400 border-transparent
+                                md:btn-md">Shop
+                                        Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide3 relative">
+                            <img src="./images/banner3.png">
+                            <div class="w-full h-full">
+                                <div
+                                    class="absolute left-0 top-0 right-0 bottom-0 m-auto
+                                            w-1/2 h-1/2 flex flex-col justify-center items-center tracking-tighter md:tracking-normal text-center gap-0">
+                                    <h1 class="font-semibold text-white text-base leading-3 mb-1
+                                          md:font-extrabold  md:text-5xl md:leading-12">Exotic tastes at your
+                                        doorstep</h1>
+                                    <p class="font-light leading-3 text-white text-xs mb-1
+                                md:font-bold md:leading-6 md:text-base">We supply highly quality
+                                        organic
+                                        products</p>
+                                    <button class="btn-xs text-white rounded-md bg-red-400 border-transparent
+                                md:btn-md">Shop
+                                        Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide4 relative">
+                            <img src="./images/banner4.png">
+                            <div class="w-full h-full">
+                                <div
+                                    class="absolute left-0 top-0 right-0 bottom-0 m-auto
+                                            w-1/2 h-1/2 flex flex-col justify-center items-center tracking-tighter md:tracking-normal text-center gap-0">
+                                    <h1 class="font-semibold text-white text-base leading-3 mb-1
+                                          md:font-extrabold  md:text-5xl md:leading-12">Exotic tastes at your
+                                        doorstep</h1>
+                                    <p class="font-light leading-3 text-white text-xs mb-1
+                                md:font-bold md:leading-6 md:text-base">We supply highly quality
+                                        organic
+                                        products</p>
+                                    <button class="btn-xs text-white rounded-md bg-red-400 border-transparent
+                                md:btn-md">Shop
+                                        Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev text-xs"></div>
+                <div class="swiper-button-next"></div>
+
+            </div>
+            <div class="absolute opacity-0 md:opacity-95 z-10 bg-white drop-shadow-lg top-[85%] w-3/5 flex flex-row justify-evenly items-center py-8 px-12 rounded-xl border-neutral-500 border">
+                <div><img class="w-3/4" src="./images/fruit1.png" alt=""></div>
+                <div><img class="w-3/4" src="./images/fruit2.png" alt=""></div>
+                <div><img class="w-3/4" src="./images/fruit3.png" alt=""></div>
+                <div><img class="w-3/4" src="./images/fruit4.png" alt=""></div>
+                <div><img class="w-3/4" src="./images/fruit5.png" alt=""></div>
+            </div>
+        </div>
+        </div>
+    </header>
+    <main>
+
+    </main>
     <footer></footer>
+    <!-- swiper.js necessery scripts -->
+    <script src="swiper-script.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false
+            },
+            loop: true,
+            clickable: true,
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+
+
+        });
+    </script>
+
 </body>
+
 </html>

@@ -1,0 +1,57 @@
+/* Search functionality on the nav bar */
+.search-container {
+    position: relative;
+    display: inline-block;
+}
+
+
+.search-input::placeholder {
+    background-image: url('../images/Frame.png');
+    background-repeat: no-repeat;
+    background-position: right 2px;
+}
+  
+
+.hamburger-btn {
+    cursor: pointer;
+}
+
+.dropdown-nav {
+    display: none;
+}
+
+.hamburger-btn:hover>.dropdown-nav {
+    display: block;
+}
+
+/* swiper.js custom css styles */
+.swiper-button-prev {
+    color: white;
+}
+
+.swiper-wraper img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: rgba(255, 255, 255, 0.493) !important;
+}
+
+/* adding overlays to the sliders */
+.slide1::before,
+.slide2::before,
+.slide3::before,
+.slide4::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Adjust the last value (alpha) to control darkness */
+    pointer-events: none;
+    /* Allows clicking through the overlay if necessary */
+}
